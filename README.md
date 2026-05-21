@@ -2,7 +2,7 @@
 
 Independent research on enterprise architecture for the agentic era — by **James D. Longmire** (Northrop Grumman Fellow, Chief Architect – Digital Ecosystems; ORCID [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)).
 
-This corpus introduces a coordinated architecture for governing how agentic AI composes into enterprise operations. The thesis: the control plane should be **enterprise-owned**, not vendor-rented; the four planes (control, runtime, experience, capability) should be composed as one architecture.
+This corpus develops the canonical **enterprise-scale deployment of [OrdSA (Ordinal Systems Architecture)](https://github.com/osa-ai-org/ordsa-ai)** — the layered authority and evidence construct for agentic systems. The thesis: the control plane should be **enterprise-owned**, not vendor-rented; the four planes (control, runtime, experience, capability) should be composed as one architecture.
 
 > *This work presents independent research and reflects the views of the author. It does not represent the position of any employer or program.*
 
@@ -66,9 +66,15 @@ Visual companions to the corpus. The full argument lives in the source documents
 
 ## Relation to OrdSA
 
-This corpus is methodologically allied with [OrdSA (Ordinal Systems Architecture)](https://github.com/osa-ai-org/ordsa-ai). Where OrdSA specifies a layered authority and evidence model for agentic systems, the AEON / AIDEX / HCAE / OAAD corpus specifies the enterprise-architectural shape that operationalizes those principles at platform scale. Both are part of the same broader research program on enterprise governance in the agentic era.
+enterprise-ai is the **canonical enterprise-scale deployment of [OrdSA (Ordinal Systems Architecture)](https://github.com/osa-ai-org/ordsa-ai)**. Where OrdSA specifies the layered authority, evidence, and execution-rights construct for agentic systems, this corpus develops the concrete enterprise-architectural shape — control plane (AEON), runtime, experience subdomain (AIDEX), capability platform (OAAD) — that an enterprise builds when it operationalizes OrdSA at platform scale.
 
-The alignment is also operational: this corpus adopts OrdSA's development process — PR-first contributions, framework-level changes captured as Architectural Decision Records (ADRs). See **Governance** below.
+The alignment runs in three dimensions:
+
+- **Structural** — AEON's six service planes and the four-plane platform map cleanly onto OrdSA's seven ordinal layers (O0 Enterprise Intent → O6 Outcome/Audit/Feedback). A worked methodological appendix mapping the two is planned as a future companion paper.
+- **Visual** — the [OrdSA construct infographic](infographics/OrdSA-Construct.png) is bundled in this corpus's infographic shelf alongside the four AI-EA infographics, since the AI-EA architecture cannot be read coherently without the construct it deploys.
+- **Operational** — this corpus has adopted OrdSA's PR-first + ADR-as-PR governance ([ADR-EA-0001](decisions/ADR-EA-0001-adopt-ordsa-development-process.md)); the framing reflected here is ratified in [ADR-EA-0002](decisions/ADR-EA-0002-reframe-as-ordsa-exemplar.md).
+
+For framework-builders evaluating OrdSA itself — read the [OrdSA construct repo](https://github.com/osa-ai-org/ordsa-ai) first. This corpus is the deployment view, not the construct.
 
 ---
 
