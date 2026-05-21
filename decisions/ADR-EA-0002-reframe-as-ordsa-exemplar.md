@@ -1,6 +1,6 @@
 # ADR-EA-0002 — Re-frame AI EA as the canonical enterprise-scale OrdSA exemplar
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2026-05-21
 - **Author:** JD Longmire
 - **Reviewers:** @jdlongmire
