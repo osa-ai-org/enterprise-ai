@@ -8,6 +8,12 @@ This corpus introduces a coordinated architecture for governing how agentic AI c
 
 ---
 
+![NextGen Enterprise AI Architecture — four-plane platform](infographics/NextGen-Enterprise-AI-Architecture-Infographic.png)
+
+*The four-plane architecture at a glance — Control (AEON) · Runtime · Experience (AIDEX) · Capability (OAAD). The full argument lives in the source documents below.*
+
+---
+
 ## The four constructs
 
 | Construct | Stands for | What it is |
@@ -27,6 +33,16 @@ This corpus introduces a coordinated architecture for governing how agentic AI c
 4. **[OAAD Strategic Brief](docs/OAAD-Strategic-Brief-v5.pdf)** — the OSS-replaces-COTS platform thesis. Addresses the build-vs-buy reframing under agentic AI.
 5. **[The Next Shape of the IT Business Capability Model](docs/OAAD-The-Next-Shape-of-the-IT-Business-Capability-Model.pdf)** — extends OAAD into the broader business-capability-model question. Reframes the capability map around owned vs. rented substrate, develops the sovereignty-constrained application, and distinguishes the pattern from its architectural neighbors.
 6. **Companion decks** — [Enterprise Agentic Platform Architecture](docs/Enterprise-Agentic-Platform-Architecture-Deck.pdf) · [AIDEX](docs/AIDEX-Deck.pdf) · [AIDEX / AEON](docs/AIDEX-AEON-Deck.pdf).
+
+---
+
+## Infographics
+
+Visual companions to the corpus. The full argument lives in the source documents; these are for orientation and at-a-glance reference.
+
+- **[NextGen Enterprise AI Architecture — landscape](infographics/NextGen-Enterprise-AI-Architecture-Infographic.png)** — the four-plane architecture in slide-friendly orientation (embedded above)
+- **[NextGen Enterprise AI Architecture — portrait](infographics/EntAI-Architecture-Infographic.png)** — same architecture in tall format, expanded design principles, AEON core services, foundation layer, domain consumers, outcomes, and Longmire's AI Maxims
+- **[Enterprise IT Agentic AI Platform Teams](infographics/EntAI-Platform-Team-Infographic.png)** — the four-platform operating model: AEON Control Plane Team, Enterprise AI Platform Team, AIDEX Experience Team, OAAD Capability Platform Team, and Domain AI Delivery Squads — with how the teams relate and the stand-up sequence
 
 ---
 
