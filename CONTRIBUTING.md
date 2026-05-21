@@ -11,8 +11,26 @@ enterprise-ai distinguishes between **framework changes** and **content changes*
 1. *(Optional)* If the change is contentious or you want community signal first, open a **Framework Q&A** discussion describing the question before authoring the ADR.
 2. Draft an ADR in `decisions/ADR-EA-NNNN-<slug>.md` (numbering is sequential, append-only) using [`decisions/TEMPLATE.md`](decisions/TEMPLATE.md) as a starting point.
 3. Open a PR with the ADR. Apply the **`adr`** label. Discussion happens on the PR — the PR is the deliberation record, the merge is ratification.
-4. Ratification requires explicit sign-off from the maintainer (currently @jdlongmire) and a comment-out period of at least one calendar week, unless the ADR is purely editorial or part of a maintainer-batched founding set.
+4. Ratification requires explicit sign-off from the maintainer (currently @jdlongmire) and a comment-out period of at least one calendar week, unless the ADR is purely editorial, part of a maintainer-batched founding set, or invoked under a **maintainer-prerogative waiver** (see below).
 5. Merged ADRs are immutable. A later ADR may supersede an earlier one; the earlier one stays in the tree marked `Superseded by ADR-EA-NNNN`.
+
+### Maintainer-prerogative waiver
+
+The one-week comment-out period exists to gather community signal. While the corpus has a sole maintainer (the current state), no community signal is available and the period is procedural ceremony.
+
+The maintainer may **explicitly waive** the comment-out period for a specific ADR by posting a comment in the PR thread stating the waiver and its basis. To remain a legitimate waiver — rather than silent rule-skip — the comment must:
+
+- Identify the ADR being waived (PR number is sufficient).
+- State the basis. Acceptable bases include: substantive deliberation documented elsewhere (in-session conversation, related Discussion thread, or the ADR's own References section); the corpus's current sole-maintainer status; or the ADR being a refinement-grade follow-up to a recently-ratified parent ADR.
+- Be visible on the PR before the merge button is pressed, so the waiver is part of the durable record.
+
+The waiver is intentionally narrow. It does **not** apply to:
+
+- ADRs that introduce a new construct, deprecate a construct, or revise the four-construct enumeration.
+- ADRs that change audience, positioning, license, or the "independent research" disclaimer.
+- Any ADR the maintainer has reason to believe a contributor (current or prospective) would want to comment on.
+
+This clause is itself revisable as the corpus's contributor surface changes; superseding it requires a future ADR-EA-NNNN, not just a CONTRIBUTING.md edit.
 
 See [`decisions/README.md`](decisions/README.md) for the navigable index of ratified ADRs.
 
