@@ -68,6 +68,17 @@ Visual companions to the corpus. The full argument lives in the source documents
 
 This corpus is methodologically allied with [OrdSA (Ordinal Systems Architecture)](https://github.com/osa-ai-org/ordsa-ai). Where OrdSA specifies a layered authority and evidence model for agentic systems, the AEON / AIDEX / HCAE / OAAD corpus specifies the enterprise-architectural shape that operationalizes those principles at platform scale. Both are part of the same broader research program on enterprise governance in the agentic era.
 
+The alignment is also operational: this corpus adopts OrdSA's development process — PR-first contributions, framework-level changes captured as Architectural Decision Records (ADRs). See **Governance** below.
+
+---
+
+## Governance
+
+enterprise-ai operates under OrdSA-style governance: framework-level changes flow as **ADRs ratified by PR**; refinements, new papers within scope, and infographic additions flow as **ordinary PRs**. `main` is the released, citable surface; all changes land via PR from `dev` or a feature branch.
+
+- [`CONTRIBUTING.md`](CONTRIBUTING.md) — the workflow, the framework-vs-content distinction, and what triggers an ADR
+- [`decisions/`](decisions/) — the ADR index and ratified records ([ADR-EA-0001](decisions/ADR-EA-0001-adopt-ordsa-development-process.md) adopts this process)
+
 ---
 
 ## Audience
