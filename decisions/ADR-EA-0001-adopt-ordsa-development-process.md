@@ -1,6 +1,6 @@
 # ADR-EA-0001 — Adopt OrdSA-style development process for enterprise-ai
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2026-05-21
 - **Author:** JD Longmire
 - **Reviewers:** @jdlongmire
