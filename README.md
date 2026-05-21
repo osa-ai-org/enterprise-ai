@@ -21,11 +21,12 @@ This corpus introduces a coordinated architecture for governing how agentic AI c
 
 ## Suggested reading order
 
-1. **[Enterprise Agentic AI Platform Strategy](docs/Enterprise%20Agentic%20AI%20Platform%20Strategy.pdf)** — the umbrella. Read this first. Argues for an enterprise-owned, four-plane platform architecture with a staged maturity model. Addressed to CIO / CTO.
-2. **[AEON white paper](docs/aeon%20white%20paper.pdf)** — the control plane in depth. Six service planes specified; Enterprise IT operating model; multi-classification deployment; phased path; minimal coherent subset.
-3. **[AIDEX white paper](docs/aidex%20white%20paper.pdf)** — the experience subdomain. Eight-axis modularity (presentation, persona, role, authority, context, memory, modality, lineage); HCAE framework; multi-backend topology; Claude Cowork as deployed reference.
-4. **[OAAD Strategic Brief](docs/OAAD%20Strategic%20Brief%20v5.pdf)** — the OSS-replaces-COTS platform thesis. Addresses the build-vs-buy reframing under agentic AI.
-5. **Companion decks** — [Enterprise Agentic Platform Architecture](docs/Enterprise%20Agentic%20Platform%20Architecture%20Deck.pdf) · [AIDEX](docs/aidex%20deck.pdf) · [AIDEX / AEON](docs/aidex%20aeon%20deck.pdf).
+1. **[Enterprise Agentic AI Platform Strategy](docs/Enterprise-Agentic-AI-Platform-Strategy.pdf)** — the umbrella. Read this first. Argues for an enterprise-owned, four-plane platform architecture with a staged maturity model. Addressed to CIO / CTO.
+2. **[AEON white paper](docs/AEON-White-Paper.pdf)** — the control plane in depth. Six service planes specified; Enterprise IT operating model; multi-classification deployment; phased path; minimal coherent subset.
+3. **[AIDEX white paper](docs/AIDEX-White-Paper.pdf)** — the experience subdomain. Eight-axis modularity (presentation, persona, role, authority, context, memory, modality, lineage); HCAE framework; multi-backend topology; Claude Cowork as deployed reference.
+4. **[OAAD Strategic Brief](docs/OAAD-Strategic-Brief-v5.pdf)** — the OSS-replaces-COTS platform thesis. Addresses the build-vs-buy reframing under agentic AI.
+5. **[The Next Shape of the IT Business Capability Model](docs/OAAD-The-Next-Shape-of-the-IT-Business-Capability-Model.pdf)** — extends OAAD into the broader business-capability-model question. Reframes the capability map around owned vs. rented substrate, develops the sovereignty-constrained application, and distinguishes the pattern from its architectural neighbors.
+6. **Companion decks** — [Enterprise Agentic Platform Architecture](docs/Enterprise-Agentic-Platform-Architecture-Deck.pdf) · [AIDEX](docs/AIDEX-Deck.pdf) · [AIDEX / AEON](docs/AIDEX-AEON-Deck.pdf).
 
 ---
 
@@ -33,13 +34,14 @@ This corpus introduces a coordinated architecture for governing how agentic AI c
 
 | Document | Source | PDF |
 |---|---|---|
-| Enterprise Agentic AI Platform Strategy | [.docx](docs/Enterprise%20Agentic%20AI%20Platform%20Strategy.docx) | [.pdf](docs/Enterprise%20Agentic%20AI%20Platform%20Strategy.pdf) |
-| Enterprise Agentic Platform Architecture Deck | [.pptx](docs/Enterprise%20Agentic%20Platform%20Architecture%20Deck.pptx) | [.pdf](docs/Enterprise%20Agentic%20Platform%20Architecture%20Deck.pdf) |
-| AEON white paper | [.docx](docs/aeon%20white%20paper.docx) | [.pdf](docs/aeon%20white%20paper.pdf) |
-| AIDEX white paper | [.docx](docs/aidex%20white%20paper.docx) | [.pdf](docs/aidex%20white%20paper.pdf) |
-| AIDEX deck | [.pptx](docs/aidex%20deck.pptx) | [.pdf](docs/aidex%20deck.pdf) |
-| AIDEX / AEON deck | [.pptx](docs/aidex%20aeon%20deck.pptx) | [.pdf](docs/aidex%20aeon%20deck.pdf) |
-| OAAD Strategic Brief v5 | [.pptx](docs/OAAD%20Strategic%20Brief%20v5.pptx) | [.pdf](docs/OAAD%20Strategic%20Brief%20v5.pdf) |
+| Enterprise Agentic AI Platform Strategy | [.docx](docs/Enterprise-Agentic-AI-Platform-Strategy.docx) | [.pdf](docs/Enterprise-Agentic-AI-Platform-Strategy.pdf) |
+| Enterprise Agentic Platform Architecture Deck | [.pptx](docs/Enterprise-Agentic-Platform-Architecture-Deck.pptx) | [.pdf](docs/Enterprise-Agentic-Platform-Architecture-Deck.pdf) |
+| AEON white paper | [.docx](docs/AEON-White-Paper.docx) | [.pdf](docs/AEON-White-Paper.pdf) |
+| AIDEX white paper | [.docx](docs/AIDEX-White-Paper.docx) | [.pdf](docs/AIDEX-White-Paper.pdf) |
+| AIDEX deck | [.pptx](docs/AIDEX-Deck.pptx) | [.pdf](docs/AIDEX-Deck.pdf) |
+| AIDEX / AEON deck | [.pptx](docs/AIDEX-AEON-Deck.pptx) | [.pdf](docs/AIDEX-AEON-Deck.pdf) |
+| OAAD Strategic Brief v5 | [.pptx](docs/OAAD-Strategic-Brief-v5.pptx) | [.pdf](docs/OAAD-Strategic-Brief-v5.pdf) |
+| OAAD — The Next Shape of the IT Business Capability Model | [.docx](docs/OAAD-The-Next-Shape-of-the-IT-Business-Capability-Model.docx) | [.pdf](docs/OAAD-The-Next-Shape-of-the-IT-Business-Capability-Model.pdf) |
 
 `.docx` and `.pptx` are the authoritative source; `.pdf` is provided alongside for browser-viewable rendering.
 
