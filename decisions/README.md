@@ -13,7 +13,7 @@ For the authoring process, see [`../CONTRIBUTING.md`](../CONTRIBUTING.md). For t
 | [0003](ADR-EA-0003-expand-corpus-to-include-dea.md) | Accepted | 2026-05-22 | Expand corpus to include Digital Ecosystems Architecture (DEA) |
 | [0004](ADR-EA-0004-add-mx-modes-as-spine-construct.md) | Accepted (refined by [0005](ADR-EA-0005-clarify-mxm-archetype.md)) | 2026-05-22 | Add Mx-Modes as a corpus construct at the agent-orientation altitude |
 | [0005](ADR-EA-0005-clarify-mxm-archetype.md) | Accepted | 2026-05-22 | Clarify MxM as the harness archetype across all levels |
-| [0006](ADR-EA-0006-introduce-vsok-tier-0-and-mode-alpha.md) | Accepted | 2026-05-22 | Introduce VSOK at Tier 0 and rename Tier 1 to Mode Alpha |
+| [0006](ADR-EA-0006-introduce-vsok-tier-0-and-mode-alpha.md) | Accepted | 2026-05-22 | Introduce Vision-Strategy at Tier 0 (VSOK as artifact) and rename Tier 1 to Mode Alpha |
 
 ## Conventions
 

@@ -1,4 +1,4 @@
-# ADR-EA-0006 — Introduce VSOK at Tier 0 and rename Tier 1 to Mode Alpha
+# ADR-EA-0006 — Introduce Vision-Strategy at Tier 0 (VSOK as artifact) and rename Tier 1 to Mode Alpha
 
 - **Status:** Accepted
 - **Date:** 2026-05-22
@@ -6,6 +6,7 @@
 - **Reviewers:** @jdlongmire
 - **Amends:** [cross-ai #40 Refinement B](https://github.com/ologos-corp/cross-ai/issues/40) (Strategy classification + canon tier shape)
 - **Ratification note:** Comment-out period waived by explicit maintainer ratification (JD Longmire, 2026-05-22). Basis: sole-maintainer status, substantive deliberation captured in cross-ai #40 plus the in-session conversation that generated this ADR, and the ADR being a refinement-grade follow-up to a recently-ratified parent (cross-ai #40 Refinement B). enterprise-ai is also slated for archival as part of the cross-ai #40 canon stand-up; this ADR's content travels with the migration to `ologos-repos/aide-canon/decisions/`.
+- **In-session amendment (2026-05-22, same-day):** Initial commit framed Tier 0 *as* VSOK. JD refined within the authoring session: Tier 0 is **Vision-Strategy** (the umbrella concept), and **VSOK** is a structured artifact *inside* Tier 0 (the methodology product that decomposes the umbrella into V/S/O/K). The Decision section below reflects the refined framing; the original framing is recorded under Alternatives considered (option 6).
 
 ## Context
 
@@ -26,16 +27,20 @@ The infographic also displayed HCAE in both Tier 2 (Foundation) and Tier 4 (Ente
 
 ## Decision
 
-### 1. Introduce Tier 0 — VSOK
+### 1. Introduce Tier 0 — Vision-Strategy (umbrella concept), with VSOK as the structured artifact inside
 
-Add a new top-level tier above Tier 1, named **VSOK** — the corpus's enterprise-strategic frame:
+Add a new top-level tier above Tier 1, named **Vision-Strategy** — the corpus's enterprise-strategic frame at the umbrella altitude. The tier carries the corpus's strategic direction (the *what* and *why* at corpus level) and points downward into Mode Alpha (which carries the synthesizing argument).
 
-- **V**ision — long-horizon outcome the corpus advances toward (artifact reserved)
-- **S**trategy — *Enterprise Agentic AI Platform Strategy* paper (migrated from Tier 4 enterprise-platforms)
-- **O**bjectives — strategic goals deriving from Vision (artifact reserved)
-- **K**ey Results — measurable outcomes anchoring Objectives (artifact reserved)
+**VSOK** lives as a structured artifact *inside* Vision-Strategy. VSOK is the methodology product that operationalizes Vision-Strategy into four named slots:
 
-VSOK names the strategic umbrella under which the corpus operates. Vision and the two reserved slots (Objectives, Key Results) are placeholders the canon commits to populating over time.
+- **V**ision — long-horizon outcome the corpus advances toward
+- **S**trategy — the positioning argument that bridges Vision to action; carries the *Enterprise Agentic AI Platform Strategy* paper (migrated from Tier 4 enterprise-platforms)
+- **O**bjectives — strategic goals deriving from Vision
+- **K**ey Results — measurable outcomes anchoring Objectives
+
+The separation matters: **Vision-Strategy is the *tier*; VSOK is one of the *artifacts* within it.** Future artifacts at Tier 0 may sit alongside VSOK (e.g., investment thesis, market positioning brief) without expanding or fragmenting the methodology product. VSOK's four slots remain stable as a single methodology output; the tier's artifact surface can grow if the corpus's strategic frame requires additional umbrella-altitude work.
+
+At stand-up time, only the Strategy artifact (existing paper) is populated. Vision and the remaining VSOK slots (Objectives, Key Results) are reserved placeholders the canon commits to populating over time.
 
 ### 2. Rename Tier 1 — Master Thesis → Mode Alpha
 
@@ -56,11 +61,14 @@ The canon's directory layout changes as follows (relative to the cross-ai #40 ra
 
 ```
 aide-canon/
-├── vsok/                          # NEW — Tier 0
-│   ├── vision/                    # reserved (artifact TBD)
-│   ├── strategy/                  # Enterprise Agentic AI Platform Strategy (relocated)
-│   ├── objectives/                # reserved (artifact TBD)
-│   └── key-results/               # reserved (artifact TBD)
+├── vision-strategy/               # NEW — Tier 0 (umbrella)
+│   ├── README.md                  # tier overview + how VSOK relates to other artifacts that may land here
+│   └── vsok/                      # structured artifact: the V/S/O/K methodology product
+│       ├── README.md              # VSOK methodology overview
+│       ├── vision/                # reserved (artifact TBD)
+│       ├── strategy/              # Enterprise Agentic AI Platform Strategy (relocated from enterprise-platforms)
+│       ├── objectives/            # reserved (artifact TBD)
+│       └── key-results/           # reserved (artifact TBD)
 ├── mode-alpha/                    # RENAMED from thesis/ (Tier 1)
 │   └── ...                        # AI-centric Digital Ecosystem synthesis (forthcoming)
 ├── foundation/                    # unchanged (Tier 2 — HCAE, AIDK, RLEG)
@@ -75,23 +83,25 @@ aide-canon/
 └── decisions/                     # unchanged
 ```
 
-`enterprise-platforms/strategy/` is **not** created. `enterprise-platforms/hcae/` is **not** created (HCAE lives in `foundation/hcae/` only).
+`enterprise-platforms/strategy/` is **not** created (Strategy lives at `vision-strategy/vsok/strategy/`). `enterprise-platforms/hcae/` is **not** created (HCAE lives in `foundation/hcae/` only).
 
 Sequencing: this ADR lands before OlogosAI's canon stand-up PR, so the migration produces the corrected shape directly rather than landing the cross-ai #40 shape and then patching.
 
 ## Consequences
 
 **Positive:**
-- Strategy's altitude becomes structurally honest — umbrella positioning at Tier 0, not a software peer at Tier 4.
-- The canon gains an explicit strategic frame (VSOK) above its intellectual content. Enterprise-architecture-native shape; reads correctly to readers familiar with VSOK / OKR conventions.
+- Strategy's altitude becomes structurally honest — umbrella positioning at Tier 0 inside Vision-Strategy, not a software peer at Tier 4.
+- The canon gains an explicit strategic frame (Vision-Strategy as tier, VSOK as the methodology artifact within) above its intellectual content. Enterprise-architecture-native shape; reads correctly to readers familiar with VSOK / OKR conventions.
+- The *tier ≠ artifact* separation gives Vision-Strategy room to host additional umbrella-altitude artifacts (investment thesis, positioning briefs) without expanding VSOK's four-slot methodology surface.
 - *Mode Alpha* reads forward — the corpus's first orientation mode, with room for siblings if future work warrants.
 - Infographic structure becomes correct (HCAE no longer appears in two tiers).
-- MANIFEST.yaml's `buildable: false` flag for Strategy becomes unnecessary; Strategy's non-buildability is now structurally evident from its placement in VSOK rather than declared as an exception within enterprise-platforms.
+- MANIFEST.yaml's `buildable: false` flag for Strategy becomes unnecessary; Strategy's non-buildability is now structurally evident from its placement under Vision-Strategy rather than declared as an exception within enterprise-platforms.
 
 **Negative:**
 - Tier renumbering touches references to "Tier 1 — Master Thesis" in any pending artifacts. Mitigated because `ologos-repos/aide-canon` is not yet populated beyond the README + initial infographic; no published downstream artifact cites the prior tier numbering as load-bearing.
-- VSOK at Tier 0 adds reserved-but-unpopulated surfaces (Vision, Objectives, Key Results) the corpus commits to populating over time. Empty tiers are an explicit IOU.
+- Vision-Strategy at Tier 0 adds reserved-but-unpopulated surfaces (Vision, Objectives, Key Results within VSOK) the corpus commits to populating over time. Empty slots are an explicit IOU.
 - The canon directory layout diverges from cross-ai #40 Refinement B's `MANIFEST.yaml` flag approach; OlogosAI's stand-up PR must reflect the amended shape.
+- The tier-vs-artifact distinction (Vision-Strategy is the tier, VSOK is the artifact within) requires a clear README at `vision-strategy/` to prevent readers from collapsing them.
 
 **Neutral:**
 - Foundation (HCAE, AIDK, RLEG) and Constructs (DEA, OrdSA, MxM, OAgents) tiers unchanged.
@@ -108,7 +118,9 @@ Sequencing: this ADR lands before OlogosAI's canon stand-up PR, so the migration
 
 4. **Defer the structural amendment; keep cross-ai #40 Refinement B as-is and patch only the infographic.** Rejected. The infographic surfaced a structural problem in the ratified shape; patching the visual without correcting the structure would leave the canon's directory layout misaligned with its own positioning. Better to amend once than to ship with a known-wrong shape and patch later.
 
-5. **Place VSOK inside `decisions/` rather than as a top-level tier.** Rejected. VSOK is not a decision artifact — it is the corpus's strategic frame. Burying it inside `decisions/` would make it discoverable only to readers who already know to look there. Top-level surfacing matches its load-bearing role.
+5. **Place VSOK inside `decisions/` rather than as a top-level tier.** Rejected. Vision-Strategy is not a decision artifact — it is the corpus's strategic frame, and VSOK is its operationalizing methodology. Burying it inside `decisions/` would make it discoverable only to readers who already know to look there. Top-level surfacing matches its load-bearing role.
+
+6. **Tier 0 *is* VSOK (initial framing of this ADR's first commit).** Rejected. Treating VSOK as the tier itself conflates the umbrella (the corpus's strategic frame) with the methodology product that operationalizes the umbrella into four named slots. The conflation has two downstream costs: (a) it locks Tier 0's artifact surface to exactly four slots (V/S/O/K), with no room for additional umbrella-altitude artifacts (investment thesis, market positioning brief, etc.) that aren't part of the VSOK decomposition; (b) it makes the tier name overlap with the artifact name, which reads as redundancy in a hierarchy listing ("Tier 0 — VSOK / VSOK paper"). Separating Vision-Strategy as the tier from VSOK as the structured artifact within it resolves both costs and preserves a clean tier ↔ artifact relationship throughout the canon's layout.
 
 ## Related
 
