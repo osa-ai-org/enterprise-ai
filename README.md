@@ -1,8 +1,8 @@
 # enterprise-ai
 
-Independent research on enterprise architecture for the agentic era — by **James D. Longmire** (Northrop Grumman Fellow, Chief Architect – Digital Ecosystems; ORCID [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)).
+Independent research on enterprise architecture for the agentic era — principal author **James D. Longmire** (Northrop Grumman Fellow, Chief Architect – Digital Ecosystems; ORCID [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)). One construct in the corpus, **Mx-Modes**, is co-authored with Micah Longmire ([ORCID 0009-0006-7608-9322](https://orcid.org/0009-0006-7608-9322)); see the per-construct attribution where it applies.
 
-This corpus develops the canonical **enterprise-scale deployment of [OrdSA (Ordinal Systems Architecture)](https://github.com/osa-ai-org/ordsa-ai)** — the layered authority and evidence construct for agentic systems. The thesis: the control plane should be **enterprise-owned**, not vendor-rented; the four planes (control, runtime, experience, capability) should be composed as one architecture.
+This corpus develops the canonical **enterprise-scale deployment of [OrdSA (Ordinal Systems Architecture)](https://github.com/osa-ai-org/ordsa-ai)** — the layered authority and evidence construct for agentic systems. The thesis: the control plane should be **enterprise-owned**, not vendor-rented; the four planes (control, runtime, experience, capability) should be composed as one architecture. A separate construct — **Mx-Modes** — names the per-agent operating-envelope orientation that the enterprise constructs presume.
 
 > *This work presents independent research and reflects the views of the author. It does not represent the position of any employer or program.*
 
@@ -25,6 +25,24 @@ This corpus develops the canonical **enterprise-scale deployment of [OrdSA (Ordi
 
 ---
 
+## Mx-Modes — the agent-orientation altitude
+
+The four constructs above operate at the **enterprise altitude**: how an organization composes its AI control plane, runtime, experience subdomain, and capability platform. They presume — but until now did not name in the corpus — that each individual agent within that architecture is *oriented* before it executes.
+
+**Mx-Modes** (architecturally designated **MxM** — multi-mode meta-harness) is the corpus's named construct at the **agent-orientation altitude**. It structures AI operation through five governing surfaces — **MIND** (reasoning discipline), **MORALS** (permission boundaries), **MISSION** (purpose and scope), **MEMORY** (continuity and reference), and **MEANS** (execution surface — tools, skills, workflows). A root `mode.md` file activates the operating posture; the model executes within the envelope the four discipline-bearing surfaces establish. Means implements; it does not grant permission.
+
+The architectural claim:
+
+> **AI behavior should be oriented before it is executed.**
+
+Most AI implementations begin with capability — models, tools, APIs, plugins, automations — and try to constrain that capability afterward. Mx-Modes inverts the order: orientation first, then capability is loaded against an established posture. The result is categorical clarity over model behavior, not a claim about model capability or assurance.
+
+Mx-Modes is **co-authored** with Micah Longmire ([ORCID 0009-0006-7608-9322](https://orcid.org/0009-0006-7608-9322), Sr. AI Architect). Per the bundling decision in [ADR-EA-0004](decisions/ADR-EA-0004-add-mx-modes-as-spine-construct.md), Mx-Modes is a spine construct at a different altitude than the AI-specialization four, not a fifth peer to them.
+
+Source: [Mx-Modes Technical Architecture Reference (.docx)](docs/Mx-Modes-Technical-Reference.docx) / [`.pdf`](docs/Mx-Modes-Technical-Reference.pdf). Construct overview: [Mx-Modes Construct Infographic](infographics/Mx-Modes-Construct-Infographic.jpg).
+
+---
+
 ## Suggested reading order
 
 1. **[Enterprise Agentic AI Platform Strategy](docs/Enterprise-Agentic-AI-Platform-Strategy.pdf)** — the umbrella. Read this first. Argues for an enterprise-owned, four-plane platform architecture with a staged maturity model. Addressed to CIO / CTO.
@@ -33,6 +51,7 @@ This corpus develops the canonical **enterprise-scale deployment of [OrdSA (Ordi
 4. **[OAAD Strategic Brief](docs/OAAD-Strategic-Brief-v5.pdf)** — the OSS-replaces-COTS platform thesis. Addresses the build-vs-buy reframing under agentic AI.
 5. **[The Next Shape of the IT Business Capability Model](docs/OAAD-The-Next-Shape-of-the-IT-Business-Capability-Model.pdf)** — extends OAAD into the broader business-capability-model question. Reframes the capability map around owned vs. rented substrate, develops the sovereignty-constrained application, and distinguishes the pattern from its architectural neighbors.
 6. **Companion decks** — [Enterprise Agentic Platform Architecture](docs/Enterprise-Agentic-Platform-Architecture-Deck.pdf) · [AIDEX](docs/AIDEX-Deck.pdf) · [AIDEX / AEON](docs/AIDEX-AEON-Deck.pdf).
+7. **[Mx-Modes Technical Architecture Reference](docs/Mx-Modes-Technical-Reference.pdf)** — the agent-orientation construct. Read this after the enterprise-altitude argument is in hand, when descending from the enterprise control plane into per-agent operating structure. Co-authored with Micah Longmire.
 
 ---
 
@@ -44,6 +63,7 @@ Visual companions to the corpus. The full argument lives in the source documents
 - **[NextGen Enterprise AI Architecture — portrait](infographics/EntAI-Architecture-Infographic.png)** — same architecture in tall format, expanded design principles, AEON core services, foundation layer, domain consumers, outcomes, and Longmire's AI Maxims
 - **[Enterprise IT Agentic AI Platform Teams](infographics/EntAI-Platform-Team-Infographic.png)** — the four-platform operating model: AEON Control Plane Team, Enterprise AI Platform Team, AIDEX Experience Team, OAAD Capability Platform Team, and Domain AI Delivery Squads — with how the teams relate and the stand-up sequence
 - **[OrdSA Construct](infographics/OrdSA-Construct.png)** — the methodologically-allied [Ordinal Systems Architecture](https://github.com/osa-ai-org/ordsa-ai) framework that orders this corpus: 7 ordinal layers (O0 Enterprise Intent → O6 Outcome/Audit/Feedback) with the four governance principles and alignment with TOGAF, ArchiMate, UAF, NIST AI RMF. Canonical home is the OrdSA repo; this copy is bundled here for navigability.
+- **[Mx-Modes Construct Infographic](infographics/Mx-Modes-Construct-Infographic.jpg)** — the agent-orientation construct at a glance: five governing surfaces (Mind / Morals / Mission / Memory / Means), foundational rule, precedence model, lifecycle, example modes. The corpus construct that names what happens *before* an agent executes.
 
 ---
 
@@ -59,6 +79,7 @@ Visual companions to the corpus. The full argument lives in the source documents
 | AIDEX / AEON deck | [.pptx](docs/AIDEX-AEON-Deck.pptx) | [.pdf](docs/AIDEX-AEON-Deck.pdf) |
 | OAAD Strategic Brief v5 | [.pptx](docs/OAAD-Strategic-Brief-v5.pptx) | [.pdf](docs/OAAD-Strategic-Brief-v5.pdf) |
 | OAAD — The Next Shape of the IT Business Capability Model | [.docx](docs/OAAD-The-Next-Shape-of-the-IT-Business-Capability-Model.docx) | [.pdf](docs/OAAD-The-Next-Shape-of-the-IT-Business-Capability-Model.pdf) |
+| Mx-Modes Technical Architecture Reference *(co-authored with [Micah Longmire](https://orcid.org/0009-0006-7608-9322))* | [.docx](docs/Mx-Modes-Technical-Reference.docx) | [.pdf](docs/Mx-Modes-Technical-Reference.pdf) |
 
 `.docx` and `.pptx` are the authoritative source; `.pdf` is provided alongside for browser-viewable rendering.
 
@@ -66,9 +87,9 @@ Visual companions to the corpus. The full argument lives in the source documents
 
 ## Related work
 
-This repository's corpus is sole-authored. Adjacent research by other authors that bears on the same broader program is **not absorbed into the corpus** but may be bundled for reading proximity. Currently:
+This repository's corpus is **principal-authored by JD Longmire**; one corpus construct (Mx-Modes) is co-authored with Micah Longmire, as noted at the construct. Adjacent research by other authors that bears on the same broader program is **not absorbed into the corpus** but may be bundled for reading proximity. Currently:
 
-- **[The Theseus Agent Thesis](docs/theseus-thesis/)** — by Micah Longmire ([bobbyhiddn](https://legate.studio/pub/bobbyhiddn)); develops *identity and memory as the permanents of AI agency* and introduces the Agent Identity Card Protocol (AICP). Operates at the agent-identity layer (per-agent identity + memory primitives), complementary to AI EA's enterprise control-plane focus and to OrdSA's per-agent execution-rights model. Canonical source at [legate.studio](https://legate.studio/pub/bobbyhiddn/the-theseus-agent-thesis); a verbatim archival snapshot lives in [`docs/theseus-thesis/`](docs/theseus-thesis/) with the author's attribution, disclaimer, and a note that the paper remains under the author's copyright (this repo's CC BY 4.0 license applies only to JD-authored content).
+- **[The Theseus Agent Thesis](docs/theseus-thesis/)** — by Micah Longmire ([bobbyhiddn](https://legate.studio/pub/bobbyhiddn)); develops *identity and memory as the permanents of AI agency* and introduces the Agent Identity Card Protocol (AICP). Operates at the agent-identity layer (per-agent identity + memory primitives), complementary to AI EA's enterprise control-plane focus and to OrdSA's per-agent execution-rights model. Canonical source at [legate.studio](https://legate.studio/pub/bobbyhiddn/the-theseus-agent-thesis); a verbatim archival snapshot lives in [`docs/theseus-thesis/`](docs/theseus-thesis/) with the author's attribution, disclaimer, and a note that the paper remains under the author's copyright (this repo's CC BY 4.0 license applies to JD-principal-authored corpus content; Mx-Modes is licensed CC BY 4.0 by both authors).
 
 ---
 
@@ -101,6 +122,8 @@ enterprise-ai operates under OrdSA-style governance: framework-level changes flo
 
 **Secondary** — enterprise architects, identity engineering, and the subdomain engineering functions that compose into AEON.
 
+**Tertiary** — agent architects and AI harness engineers who consume Mx-Modes at the per-agent altitude. The enterprise altitude (AEON / AIDEX / HCAE / OAAD) and the agent-orientation altitude (Mx-Modes) are linked but separately addressable; readers can enter either way depending on whether they are composing an enterprise platform or structuring an individual agent's operating envelope.
+
 For an enterprise without those pressures, a rented vendor control plane may be the rational choice; the corpus says so explicitly rather than posing as a universal prescription.
 
 ---
@@ -111,7 +134,11 @@ Licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICE
 
 **Suggested citation:**
 
-> Longmire, J. D. (2026). *[Document title]*. AEON / AIDEX / HCAE / OAAD architectural research corpus. https://github.com/osa-ai-org/enterprise-ai
+> Longmire, J. D. (2026). *[Document title]*. AEON / AIDEX / HCAE / OAAD / Mx-Modes architectural research corpus. https://github.com/osa-ai-org/enterprise-ai
+
+For Mx-Modes specifically, cite both authors:
+
+> Longmire, J. D., & Longmire, M. (2026). *Mx-Modes: A Meta-Harness Framework for Multi-Mode AI Operation*. https://github.com/osa-ai-org/enterprise-ai (ORCIDs: 0009-0009-1383-7698 / 0009-0006-7608-9322)
 
 ---
 
