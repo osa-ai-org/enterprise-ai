@@ -1,5 +1,30 @@
 # enterprise-ai
 
+> **⚠️ This repository has been retired. The corpus is now hosted at [`ologos-repos/aide-canon`](https://github.com/ologos-repos/aide-canon).**
+>
+> The corpus has been migrated and restructured into the **AI-centric Digital Ecosystem (AIDE)** canon — a navigable four-tier shape (`foundation/`, `constructs/`, `enterprise-platforms/`, `related-work/`). The migration is recorded in [ADR-EA-0006](https://github.com/ologos-repos/aide-canon/blob/main/decisions/ADR-EA-0006-migrate-corpus-to-aide-canon.md).
+>
+> **What moved where:**
+>
+> | Was here | Now at |
+> |---|---|
+> | `docs/Digital-Ecosystems-Architecture-Base.pdf` + DEA positioning papers | [`aide-canon/constructs/dea/`](https://github.com/ologos-repos/aide-canon/tree/main/constructs/dea) |
+> | `docs/Mx-Modes-Technical-Reference.pdf` | [`aide-canon/constructs/mxm/`](https://github.com/ologos-repos/aide-canon/tree/main/constructs/mxm) |
+> | `docs/Enterprise-Agentic-AI-Platform-Strategy.pdf` + architecture deck | [`aide-canon/enterprise-platforms/strategy/`](https://github.com/ologos-repos/aide-canon/tree/main/enterprise-platforms/strategy) |
+> | `docs/AEON-White-Paper.pdf` | [`aide-canon/enterprise-platforms/aeon/`](https://github.com/ologos-repos/aide-canon/tree/main/enterprise-platforms/aeon) |
+> | `docs/AIDEX-White-Paper.pdf` + AIDEX decks | [`aide-canon/enterprise-platforms/aidex/`](https://github.com/ologos-repos/aide-canon/tree/main/enterprise-platforms/aidex) |
+> | `docs/OAAD-Strategic-Brief-v5.pdf` + capability-model paper | [`aide-canon/enterprise-platforms/oaad/`](https://github.com/ologos-repos/aide-canon/tree/main/enterprise-platforms/oaad) |
+> | `docs/theseus-thesis/` | [`aide-canon/related-work/theseus/`](https://github.com/ologos-repos/aide-canon/tree/main/related-work/theseus) |
+> | `decisions/ADR-EA-0001/0002` (canon-level) | [`aide-canon/decisions/`](https://github.com/ologos-repos/aide-canon/tree/main/decisions) |
+> | `decisions/ADR-EA-0003` (DEA) | [`aide-canon/constructs/dea/decisions/`](https://github.com/ologos-repos/aide-canon/tree/main/constructs/dea/decisions) |
+> | `decisions/ADR-EA-0004/0005` (MxM) | [`aide-canon/constructs/mxm/decisions/`](https://github.com/ologos-repos/aide-canon/tree/main/constructs/mxm/decisions) |
+>
+> **Existing citations remain valid.** Published Zenodo deposits and external links pointing at `osa-ai-org/enterprise-ai` continue to resolve — the archived repository remains publicly readable. For new citations, please reference the [`ologos-repos/aide-canon`](https://github.com/ologos-repos/aide-canon) paths.
+>
+> This README is preserved below for historical reference. Future work happens at the canon.
+
+---
+
 Independent research on enterprise architecture for the agentic era — principal author **James D. Longmire** (Northrop Grumman Fellow, Chief Architect – Digital Ecosystems; ORCID [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)). One construct in the corpus, **Mx-Modes**, is co-authored with Micah Longmire ([ORCID 0009-0006-7608-9322](https://orcid.org/0009-0006-7608-9322)); see the per-construct attribution where it applies.
 
 This corpus develops **enterprise architecture for the agentic era** across three layers: **Digital Ecosystems Architecture (DEA)** as the general-EA foundation — a three-baseline framework for coherent digital realization — an **AI specialization** that operationalizes [OrdSA (Ordinal Systems Architecture)](https://github.com/osa-ai-org/ordsa-ai) at enterprise scale through four AI-focused constructs (AEON, AIDEX, HCAE, OAAD), and a separate construct, **Mx-Modes**, that names the per-agent operating-envelope orientation the enterprise constructs presume. The thesis: enterprise architecture fails not through lack of design but through lack of coherence; the agentic-era control plane should be **enterprise-owned**, not vendor-rented; the four planes (control, runtime, experience, capability) should be composed as one architecture, ordered by OrdSA's authority/evidence construct; and individual agents within that architecture should be **oriented before they are executed**.
