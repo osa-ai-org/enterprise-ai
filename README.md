@@ -2,7 +2,7 @@
 
 Independent research on enterprise architecture for the agentic era — principal author **James D. Longmire** (Northrop Grumman Fellow, Chief Architect – Digital Ecosystems; ORCID [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)). One construct in the corpus, **Mx-Modes**, is co-authored with Micah Longmire ([ORCID 0009-0006-7608-9322](https://orcid.org/0009-0006-7608-9322)); see the per-construct attribution where it applies.
 
-This corpus develops the canonical **enterprise-scale deployment of [OrdSA (Ordinal Systems Architecture)](https://github.com/osa-ai-org/ordsa-ai)** — the layered authority and evidence construct for agentic systems. The thesis: the control plane should be **enterprise-owned**, not vendor-rented; the four planes (control, runtime, experience, capability) should be composed as one architecture. A separate construct — **Mx-Modes** — names the per-agent operating-envelope orientation that the enterprise constructs presume.
+This corpus develops **enterprise architecture for the agentic era** across three layers: **Digital Ecosystems Architecture (DEA)** as the general-EA foundation — a three-baseline framework for coherent digital realization — an **AI specialization** that operationalizes [OrdSA (Ordinal Systems Architecture)](https://github.com/osa-ai-org/ordsa-ai) at enterprise scale through four AI-focused constructs (AEON, AIDEX, HCAE, OAAD), and a separate construct, **Mx-Modes**, that names the per-agent operating-envelope orientation the enterprise constructs presume. The thesis: enterprise architecture fails not through lack of design but through lack of coherence; the agentic-era control plane should be **enterprise-owned**, not vendor-rented; the four planes (control, runtime, experience, capability) should be composed as one architecture, ordered by OrdSA's authority/evidence construct; and individual agents within that architecture should be **oriented before they are executed**.
 
 > *This work presents independent research and reflects the views of the author. It does not represent the position of any employer or program.*
 
@@ -14,7 +14,25 @@ This corpus develops the canonical **enterprise-scale deployment of [OrdSA (Ordi
 
 ---
 
-## The four constructs
+## Architecture frame: Digital Ecosystems Architecture (DEA)
+
+The corpus's general-EA foundation is **Digital Ecosystems Architecture** — a three-baseline framework for coherent digital realization, organized around three architecture disciplines and a single governing question per discipline:
+
+| Baseline | Owned by | Governing question |
+|---|---|---|
+| **Digital Capability Baseline** | Enterprise Architecture | What must the enterprise be able to do to achieve its intended outcomes? |
+| **Digital Technical Baseline** | Systems Architecture | How are those capabilities technically realized? |
+| **Digital Operational Baseline** | Solutions Architecture | How is the resulting solution delivered, operated, governed, and sustained? |
+
+Traceability binds the three: from business outcome to capability, capability to system, system to solution, solution to operation, and operation back to measured performance that revises the baselines above it. The framework holds that **enterprise architecture fails not by lacking design but by losing coherence across the disciplines that produce it**.
+
+DEA is scoped to digitally-realized capabilities — those whose means of realization is substantially technical — and is intentionally general, not AI-specific. A forthcoming AI-specific extension, **AIDE-AF**, will bridge DEA's three baselines to the AI-focused constructs below. See [`Digital-Ecosystems-Architecture-Base.pdf`](docs/Digital-Ecosystems-Architecture-Base.pdf) for the foundational paper; the positioning papers cover DEA's relation to [UAF](docs/DEA-UAF-Positioning.pdf) and to the [DIB compliance stack](docs/DEA-DIB-Compliance-Positioning.pdf).
+
+---
+
+## AI specialization (AEON / AIDEX / HCAE / OAAD)
+
+Within DEA's general frame, the corpus develops four AI-focused constructs that together compose into the agentic enterprise control plane. A forthcoming AI extension to DEA (AIDE-AF) will formally bridge the three-baseline framework to these constructs; until then, the relationship is articulated in prose across the AI specialization papers.
 
 | Construct | Stands for | What it is |
 |---|---|---|
@@ -45,13 +63,24 @@ Source: [Mx-Modes Technical Architecture Reference (.docx)](docs/Mx-Modes-Techni
 
 ## Suggested reading order
 
-1. **[Enterprise Agentic AI Platform Strategy](docs/Enterprise-Agentic-AI-Platform-Strategy.pdf)** — the umbrella. Read this first. Argues for an enterprise-owned, four-plane platform architecture with a staged maturity model. Addressed to CIO / CTO.
-2. **[AEON white paper](docs/AEON-White-Paper.pdf)** — the control plane in depth. Six service planes specified; Enterprise IT operating model; multi-classification deployment; phased path; minimal coherent subset.
-3. **[AIDEX white paper](docs/AIDEX-White-Paper.pdf)** — the experience subdomain. Eight-axis modularity (presentation, persona, role, authority, context, memory, modality, lineage); HCAE framework; multi-backend topology; Claude Cowork as deployed reference.
-4. **[OAAD Strategic Brief](docs/OAAD-Strategic-Brief-v5.pdf)** — the OSS-replaces-COTS platform thesis. Addresses the build-vs-buy reframing under agentic AI.
-5. **[The Next Shape of the IT Business Capability Model](docs/OAAD-The-Next-Shape-of-the-IT-Business-Capability-Model.pdf)** — extends OAAD into the broader business-capability-model question. Reframes the capability map around owned vs. rented substrate, develops the sovereignty-constrained application, and distinguishes the pattern from its architectural neighbors.
-6. **Companion decks** — [Enterprise Agentic Platform Architecture](docs/Enterprise-Agentic-Platform-Architecture-Deck.pdf) · [AIDEX](docs/AIDEX-Deck.pdf) · [AIDEX / AEON](docs/AIDEX-AEON-Deck.pdf).
-7. **[Mx-Modes Technical Architecture Reference](docs/Mx-Modes-Technical-Reference.pdf)** — the agent-orientation construct. Read this after the enterprise-altitude argument is in hand, when descending from the enterprise control plane into per-agent operating structure. Co-authored with Micah Longmire.
+**Foundations (DEA — general EA frame):**
+
+1. **[Digital Ecosystems Architecture: A Three-Baseline Framework for Coherent Digital Realization](docs/Digital-Ecosystems-Architecture-Base.pdf)** — read this first. The foundational paper: three baselines (Capability, Technical, Operational), three architecture disciplines, three governing questions, bidirectional traceability. Stands on its own as a general EA frame, independent of the AI specialization below.
+2. **[DEA and the Unified Architecture Framework](docs/DEA-UAF-Positioning.pdf)** — positions DEA above UAF on the governance axis, below UAF on the description axis. Read after the base paper if your organization has invested in UAF.
+3. **[DEA and the DIB Compliance Stack](docs/DEA-DIB-Compliance-Positioning.pdf)** — positions DEA beneath the DoD / CMMC / NIST compliance regime as a service layer. Read if you operate in defense or other regulated contexts.
+
+**AI specialization (AEON / AIDEX / HCAE / OAAD):**
+
+4. **[Enterprise Agentic AI Platform Strategy](docs/Enterprise-Agentic-AI-Platform-Strategy.pdf)** — the umbrella for the AI specialization. Argues for an enterprise-owned, four-plane platform architecture with a staged maturity model. Addressed to CIO / CTO.
+5. **[AEON white paper](docs/AEON-White-Paper.pdf)** — the control plane in depth. Six service planes specified; Enterprise IT operating model; multi-classification deployment; phased path; minimal coherent subset.
+6. **[AIDEX white paper](docs/AIDEX-White-Paper.pdf)** — the experience subdomain. Eight-axis modularity (presentation, persona, role, authority, context, memory, modality, lineage); HCAE framework; multi-backend topology; Claude Cowork as deployed reference.
+7. **[OAAD Strategic Brief](docs/OAAD-Strategic-Brief-v5.pdf)** — the OSS-replaces-COTS platform thesis. Addresses the build-vs-buy reframing under agentic AI.
+8. **[The Next Shape of the IT Business Capability Model](docs/OAAD-The-Next-Shape-of-the-IT-Business-Capability-Model.pdf)** — extends OAAD into the broader business-capability-model question. Reframes the capability map around owned vs. rented substrate, develops the sovereignty-constrained application, and distinguishes the pattern from its architectural neighbors.
+9. **Companion decks** — [Enterprise Agentic Platform Architecture](docs/Enterprise-Agentic-Platform-Architecture-Deck.pdf) · [AIDEX](docs/AIDEX-Deck.pdf) · [AIDEX / AEON](docs/AIDEX-AEON-Deck.pdf).
+
+**Agent orientation (Mx-Modes):**
+
+10. **[Mx-Modes Technical Architecture Reference](docs/Mx-Modes-Technical-Reference.pdf)** — the agent-orientation construct. Read this after the enterprise-altitude argument is in hand, when descending from the enterprise control plane into per-agent operating structure. Co-authored with Micah Longmire.
 
 ---
 
@@ -59,15 +88,39 @@ Source: [Mx-Modes Technical Architecture Reference (.docx)](docs/Mx-Modes-Techni
 
 Visual companions to the corpus. The full argument lives in the source documents; these are for orientation and at-a-glance reference.
 
+**Foundations (DEA):**
+
+- **[DEA — Three-Baseline Framework](infographics/DEA-Construct-Infographic.jpg)** — *"Digital Ecosystems Architecture: A Three-Baseline Framework for Coherent Digital Realization"* — the three baselines (Capability / Technical / Operational), three disciplines, traceability chain, ecosystem perspective, and the hinge to AIDE-AF (forthcoming AI extension)
+- **[DEA and UAF — Positioning](infographics/DEA-UAF-Positioning-Infographic.jpg)** — *"Why a Coherence Framework Sits Above a Description Framework, and Depends On It"* — the altitude argument, baseline crosswalk, governance vs description axes
+- **[DEA and the DIB Compliance Stack — Positioning](infographics/DEA-DIB-Compliance-Positioning-Infographic.jpg)** — *"Why Compliance Is the Governing Layer, and Architecture Is How an Enterprise Satisfies It Coherently"* — compliance authority paths (unclassified DIB + classified accreditation), DEA as the coherence layer beneath, traceability from obligation to evidence
+
+**AI specialization (AEON / AIDEX / HCAE / OAAD):**
+
 - **[NextGen Enterprise AI Architecture — landscape](infographics/NextGen-Enterprise-AI-Architecture-Infographic.png)** — the four-plane architecture in slide-friendly orientation (embedded above)
 - **[NextGen Enterprise AI Architecture — portrait](infographics/EntAI-Architecture-Infographic.png)** — same architecture in tall format, expanded design principles, AEON core services, foundation layer, domain consumers, outcomes, and Longmire's AI Maxims
 - **[Enterprise IT Agentic AI Platform Teams](infographics/EntAI-Platform-Team-Infographic.png)** — the four-platform operating model: AEON Control Plane Team, Enterprise AI Platform Team, AIDEX Experience Team, OAAD Capability Platform Team, and Domain AI Delivery Squads — with how the teams relate and the stand-up sequence
-- **[OrdSA Construct](infographics/OrdSA-Construct.png)** — the methodologically-allied [Ordinal Systems Architecture](https://github.com/osa-ai-org/ordsa-ai) framework that orders this corpus: 7 ordinal layers (O0 Enterprise Intent → O6 Outcome/Audit/Feedback) with the four governance principles and alignment with TOGAF, ArchiMate, UAF, NIST AI RMF. Canonical home is the OrdSA repo; this copy is bundled here for navigability.
+
+**Agent orientation (Mx-Modes):**
+
 - **[Mx-Modes Construct Infographic](infographics/Mx-Modes-Construct-Infographic.jpg)** — the agent-orientation construct at a glance: five governing surfaces (Mind / Morals / Mission / Memory / Means), foundational rule, precedence model, lifecycle, example modes. The corpus construct that names what happens *before* an agent executes.
+
+**Allied construct (OrdSA):**
+
+- **[OrdSA Construct](infographics/OrdSA-Construct.png)** — the methodologically-allied [Ordinal Systems Architecture](https://github.com/osa-ai-org/ordsa-ai) framework that orders this corpus's AI specialization: 7 ordinal layers (O0 Enterprise Intent → O6 Outcome/Audit/Feedback) with the four governance principles and alignment with TOGAF, ArchiMate, UAF, NIST AI RMF. Canonical home is the OrdSA repo; this copy is bundled here for navigability.
 
 ---
 
 ## Document index
+
+### Foundations (DEA)
+
+| Document | Source | PDF |
+|---|---|---|
+| Digital Ecosystems Architecture — A Three-Baseline Framework for Coherent Digital Realization | [.docx](docs/Digital-Ecosystems-Architecture-Base.docx) | [.pdf](docs/Digital-Ecosystems-Architecture-Base.pdf) |
+| DEA and the Unified Architecture Framework | [.docx](docs/DEA-UAF-Positioning.docx) | [.pdf](docs/DEA-UAF-Positioning.pdf) |
+| DEA and the DIB Compliance Stack | [.docx](docs/DEA-DIB-Compliance-Positioning.docx) | [.pdf](docs/DEA-DIB-Compliance-Positioning.pdf) |
+
+### AI specialization (AEON / AIDEX / HCAE / OAAD)
 
 | Document | Source | PDF |
 |---|---|---|
@@ -95,9 +148,11 @@ This repository's corpus is **principal-authored by JD Longmire**; one corpus co
 
 ## Relation to OrdSA
 
-enterprise-ai is the **canonical enterprise-scale deployment of [OrdSA (Ordinal Systems Architecture)](https://github.com/osa-ai-org/ordsa-ai)**. Where OrdSA specifies the layered authority, evidence, and execution-rights construct for agentic systems, this corpus develops the concrete enterprise-architectural shape — control plane (AEON), runtime, experience subdomain (AIDEX), capability platform (OAAD) — that an enterprise builds when it operationalizes OrdSA at platform scale.
+The **AI specialization** of this corpus (AEON / AIDEX / HCAE / OAAD) is the canonical **enterprise-scale deployment of [OrdSA (Ordinal Systems Architecture)](https://github.com/osa-ai-org/ordsa-ai)** — the layered authority, evidence, and execution-rights construct for agentic systems. The AI specialization develops the concrete enterprise-architectural shape — control plane (AEON), runtime, experience subdomain (AIDEX), capability platform (OAAD) — that an enterprise builds when it operationalizes OrdSA at platform scale.
 
-The alignment runs in three dimensions:
+DEA and OrdSA address **different axes** and are orthogonal: DEA orders enterprise architecture by **coherence and accountability** across three architecture disciplines (Capability / Technical / Operational); OrdSA orders agentic systems by **authority, evidence, and execution rights** across seven ordinal layers (O0 → O6). An enterprise can apply DEA without OrdSA (for non-agentic work) or OrdSA without DEA's three-baseline framing (other EA structures are possible). The AI specialization applies both: DEA provides the architectural baselines and traceability discipline; OrdSA provides the authority and evidence ordering within agentic operations.
+
+The alignment with OrdSA runs in three dimensions (within the AI specialization):
 
 - **Structural** — AEON's six service planes and the four-plane platform map cleanly onto OrdSA's seven ordinal layers (O0 Enterprise Intent → O6 Outcome/Audit/Feedback). A worked methodological appendix mapping the two is planned as a future companion paper.
 - **Visual** — the [OrdSA construct infographic](infographics/OrdSA-Construct.png) is bundled in this corpus's infographic shelf alongside the four AI-EA infographics, since the AI-EA architecture cannot be read coherently without the construct it deploys.
@@ -120,7 +175,9 @@ enterprise-ai operates under OrdSA-style governance: framework-level changes flo
 
 **Primary** — CIO, CTO, Chief Architect, CISO at defense and highly regulated enterprises: those running classified or mission systems, those bound to demonstrate first-party auditability of all agentic operations, those whose sovereignty posture makes vendor governance over their own operations unacceptable.
 
-**Secondary** — enterprise architects, identity engineering, and the subdomain engineering functions that compose into AEON.
+**Secondary — DEA general-EA audience:** Enterprise Architects, Systems Architects, Solutions Architects in general digital-ecosystem practice. The DEA foundational papers stand on their own as a general EA framework, independent of the AI specialization.
+
+**Secondary — AI specialization:** enterprise architects, identity engineering, and the subdomain engineering functions that compose into AEON.
 
 **Tertiary** — agent architects and AI harness engineers who consume Mx-Modes at the per-agent altitude. The enterprise altitude (AEON / AIDEX / HCAE / OAAD) and the agent-orientation altitude (Mx-Modes) are linked but separately addressable; readers can enter either way depending on whether they are composing an enterprise platform or structuring an individual agent's operating envelope.
 
@@ -134,7 +191,7 @@ Licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICE
 
 **Suggested citation:**
 
-> Longmire, J. D. (2026). *[Document title]*. AEON / AIDEX / HCAE / OAAD / Mx-Modes architectural research corpus. https://github.com/osa-ai-org/enterprise-ai
+> Longmire, J. D. (2026). *[Document title]*. Enterprise architecture research corpus — Digital Ecosystems Architecture (DEA) + AEON / AIDEX / HCAE / OAAD + Mx-Modes. https://github.com/osa-ai-org/enterprise-ai
 
 For Mx-Modes specifically, cite both authors:
 
