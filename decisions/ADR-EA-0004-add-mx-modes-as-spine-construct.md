@@ -5,6 +5,7 @@
 - **Author:** JD Longmire
 - **Reviewers:** @jdlongmire
 - **Ratification note:** Comment-out period waived by explicit maintainer ratification (JD Longmire, 2026-05-22). The non-waivable-clause rule from CONTRIBUTING.md is preserved as the default; the maintainer's prerogative to override the default by ratification was exercised here for the spine-promotion decision, after the bundling reframe (allied → spine) was settled in conversation. The override is recorded so future readers of the ADR see that the period was deliberately collapsed, not silently skipped.
+- **See also:** [ADR-EA-0005](ADR-EA-0005-clarify-mxm-archetype.md) — refines this ADR's positioning of MxM ("agent-orientation altitude" → harness archetype across altitudes). The bundling decision (Mx-Modes as spine, not allied) is unchanged.
 
 ## Context
 

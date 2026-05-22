@@ -11,7 +11,8 @@ For the authoring process, see [`../CONTRIBUTING.md`](../CONTRIBUTING.md). For t
 | [0001](ADR-EA-0001-adopt-ordsa-development-process.md) | Accepted | 2026-05-21 | Adopt OrdSA-style development process for enterprise-ai |
 | [0002](ADR-EA-0002-reframe-as-ordsa-exemplar.md) | Accepted | 2026-05-21 | Re-frame AI EA as the canonical enterprise-scale OrdSA exemplar |
 | [0003](ADR-EA-0003-expand-corpus-to-include-dea.md) | Accepted | 2026-05-22 | Expand corpus to include Digital Ecosystems Architecture (DEA) |
-| [0004](ADR-EA-0004-add-mx-modes-as-spine-construct.md) | Accepted | 2026-05-22 | Add Mx-Modes as a corpus construct at the agent-orientation altitude |
+| [0004](ADR-EA-0004-add-mx-modes-as-spine-construct.md) | Accepted (refined by [0005](ADR-EA-0005-clarify-mxm-archetype.md)) | 2026-05-22 | Add Mx-Modes as a corpus construct at the agent-orientation altitude |
+| [0005](ADR-EA-0005-clarify-mxm-archetype.md) | Proposed | 2026-05-22 | Clarify MxM as the harness archetype across all levels |
 
 ## Conventions
 
