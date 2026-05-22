@@ -1,10 +1,11 @@
 # ADR-EA-0005 — Clarify MxM as the harness archetype across all levels
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2026-05-22
 - **Author:** JD Longmire
 - **Reviewers:** @jdlongmire
 - **Refines:** [ADR-EA-0004](ADR-EA-0004-add-mx-modes-as-spine-construct.md) (positioning only; bundling decision unchanged)
+- **Ratification note:** Comment-out period waived by explicit maintainer ratification (JD Longmire, 2026-05-22). Same override pattern as ADR-EA-0003 and ADR-EA-0004 ratified earlier today. The non-waivable-clause rule from CONTRIBUTING.md is preserved as the default; the maintainer's prerogative to override is exercised here for the positioning refinement, which is consistent with the cross-ai #40 topic 2 hierarchy plan already published as load-bearing.
 
 ## Context
 
