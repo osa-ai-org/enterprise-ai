@@ -1,11 +1,12 @@
-# ADR-EA-0006 — Introduce Vision-Strategy at Tier 0 (VSOK as artifact) and rename Tier 1 to Mode Alpha
+# ADR-EA-0007 — Introduce Vision-Strategy at Tier 0 (VSOK as artifact) and rename Tier 1 to Mode Alpha
 
 - **Status:** Accepted
 - **Date:** 2026-05-22
 - **Author:** JD Longmire
 - **Reviewers:** @jdlongmire
-- **Amends:** [cross-ai #40 Refinement B](https://github.com/ologos-corp/cross-ai/issues/40) (Strategy classification + canon tier shape)
-- **Ratification note:** Comment-out period waived by explicit maintainer ratification (JD Longmire, 2026-05-22). Basis: sole-maintainer status, substantive deliberation captured in cross-ai #40 plus the in-session conversation that generated this ADR, and the ADR being a refinement-grade follow-up to a recently-ratified parent (cross-ai #40 Refinement B). enterprise-ai is also slated for archival as part of the cross-ai #40 canon stand-up; this ADR's content travels with the migration to `ologos-repos/aide-canon/decisions/`.
+- **Amends:** [cross-ai #40 Refinement B](https://github.com/ologos-corp/cross-ai/issues/40) (Strategy classification + canon tier shape); applies post-stand-up to the structure landed by [ADR-EA-0006 (aide-canon umbrella migration)](https://github.com/ologos-repos/aide-canon/blob/main/decisions/ADR-EA-0006-migrate-corpus-to-aide-canon.md).
+- **Ratification note:** Comment-out period waived by explicit maintainer ratification (JD Longmire, 2026-05-22). Basis: sole-maintainer status, substantive deliberation captured in cross-ai #40 plus the in-session conversation that generated this ADR, and the ADR being a refinement-grade follow-up to a recently-ratified parent (cross-ai #40 Refinement B). enterprise-ai is slated for archival per ADR-EA-0006 (migration); the canonical version of this ADR lives at [`ologos-repos/aide-canon/decisions/ADR-EA-0007-*.md`](https://github.com/ologos-repos/aide-canon/blob/main/decisions/ADR-EA-0007-introduce-vsok-tier-0-and-mode-alpha.md).
+- **Numbering note:** Initially committed as ADR-EA-0006 (commits [`e43ae5f`](https://github.com/osa-ai-org/enterprise-ai/commit/e43ae5f) + [`250267c`](https://github.com/osa-ai-org/enterprise-ai/commit/250267c)). The 0006 slot was held in parallel by OlogosAI's umbrella migration ADR (committed earlier at 13:48 CDT to aide-canon's dev branch, merged via PR #2). Neither party saw the other's draft until after both landed. Per CONTRIBUTING.md sequential-numbering rule, this ADR renumbers to **ADR-EA-0007**; OlogosAI's umbrella migration ADR holds the canonical 0006 slot.
 - **In-session amendment (2026-05-22, same-day):** Initial commit framed Tier 0 *as* VSOK. JD refined within the authoring session: Tier 0 is **Vision-Strategy** (the umbrella concept), and **VSOK** is a structured artifact *inside* Tier 0 (the methodology product that decomposes the umbrella into V/S/O/K). The Decision section below reflects the refined framing; the original framing is recorded under Alternatives considered (option 6).
 
 ## Context
@@ -83,9 +84,9 @@ aide-canon/
 └── decisions/                     # unchanged
 ```
 
-`enterprise-platforms/strategy/` is **not** created (Strategy lives at `vision-strategy/vsok/strategy/`). `enterprise-platforms/hcae/` is **not** created (HCAE lives in `foundation/hcae/` only).
+`enterprise-platforms/strategy/` is **removed** (Strategy migrates to `vision-strategy/vsok/strategy/`). `enterprise-platforms/hcae/` is not created (HCAE lives in `foundation/hcae/` only — already correct per the stand-up).
 
-Sequencing: this ADR lands before OlogosAI's canon stand-up PR, so the migration produces the corrected shape directly rather than landing the cross-ai #40 shape and then patching.
+**Sequencing.** OlogosAI's umbrella migration ADR (ADR-EA-0006) landed the canon stand-up with the cross-ai #40 Refinement B shape (Strategy under `enterprise-platforms/` flagged `buildable: false`; `thesis/` reserved for Tier 1). This ADR (ADR-EA-0007) applies as a **post-stand-up structural amendment**: a follow-up restructure PR against `ologos-repos/aide-canon` is required to (a) create `vision-strategy/` + `vsok/` subtree, (b) move Strategy artifacts from `enterprise-platforms/strategy/` to `vision-strategy/vsok/strategy/`, (c) rename `thesis/` → `mode-alpha/` if present, and (d) remove the `buildable: false` MANIFEST entry once MANIFEST is created. That restructure PR is OlogosAI's to execute as canon prime (cross-ai #20 governance).
 
 ## Consequences
 

@@ -13,7 +13,9 @@ For the authoring process, see [`../CONTRIBUTING.md`](../CONTRIBUTING.md). For t
 | [0003](ADR-EA-0003-expand-corpus-to-include-dea.md) | Accepted | 2026-05-22 | Expand corpus to include Digital Ecosystems Architecture (DEA) |
 | [0004](ADR-EA-0004-add-mx-modes-as-spine-construct.md) | Accepted (refined by [0005](ADR-EA-0005-clarify-mxm-archetype.md)) | 2026-05-22 | Add Mx-Modes as a corpus construct at the agent-orientation altitude |
 | [0005](ADR-EA-0005-clarify-mxm-archetype.md) | Accepted | 2026-05-22 | Clarify MxM as the harness archetype across all levels |
-| [0006](ADR-EA-0006-introduce-vsok-tier-0-and-mode-alpha.md) | Accepted | 2026-05-22 | Introduce Vision-Strategy at Tier 0 (VSOK as artifact) and rename Tier 1 to Mode Alpha |
+| [0007](ADR-EA-0007-introduce-vsok-tier-0-and-mode-alpha.md) | Accepted | 2026-05-22 | Introduce Vision-Strategy at Tier 0 (VSOK as artifact) and rename Tier 1 to Mode Alpha |
+
+> **Note on numbering.** ADR-EA-0006 was held in parallel by OlogosAI's umbrella migration ADR ([`ologos-repos/aide-canon/decisions/ADR-EA-0006-migrate-corpus-to-aide-canon.md`](https://github.com/ologos-repos/aide-canon/blob/main/decisions/ADR-EA-0006-migrate-corpus-to-aide-canon.md)) committed at 13:48 CDT on 2026-05-22 to aide-canon's dev branch (merged via PR #2). The ADR initially filed here as ADR-EA-0006 was renumbered to 0007 to clear the collision; OlogosAI's umbrella migration ADR is the canonical holder of the 0006 slot.
 
 ## Conventions
 
