@@ -64,6 +64,14 @@ Visual companions to the corpus. The full argument lives in the source documents
 
 ---
 
+## Related work
+
+This repository's corpus is sole-authored. Adjacent research by other authors that bears on the same broader program is **not absorbed into the corpus** but may be bundled for reading proximity. Currently:
+
+- **[The Theseus Agent Thesis](docs/theseus-thesis/)** — by Micah Longmire ([bobbyhiddn](https://legate.studio/pub/bobbyhiddn)); develops *identity and memory as the permanents of AI agency* and introduces the Agent Identity Card Protocol (AICP). Operates at the agent-identity layer (per-agent identity + memory primitives), complementary to AI EA's enterprise control-plane focus and to OrdSA's per-agent execution-rights model. Canonical source at [legate.studio](https://legate.studio/pub/bobbyhiddn/the-theseus-agent-thesis); a verbatim archival snapshot lives in [`docs/theseus-thesis/`](docs/theseus-thesis/) with the author's attribution, disclaimer, and a note that the paper remains under the author's copyright (this repo's CC BY 4.0 license applies only to JD-authored content).
+
+---
+
 ## Relation to OrdSA
 
 enterprise-ai is the **canonical enterprise-scale deployment of [OrdSA (Ordinal Systems Architecture)](https://github.com/osa-ai-org/ordsa-ai)**. Where OrdSA specifies the layered authority, evidence, and execution-rights construct for agentic systems, this corpus develops the concrete enterprise-architectural shape — control plane (AEON), runtime, experience subdomain (AIDEX), capability platform (OAAD) — that an enterprise builds when it operationalizes OrdSA at platform scale.
